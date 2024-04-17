@@ -1,5 +1,5 @@
 from langchain_openai import ChatOpenAI
-from config import API_KEY
+from .config import API_KEY
 
 def create_llm_client():
     return ChatOpenAI(

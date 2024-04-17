@@ -1,7 +1,7 @@
 from typing import List, TypedDict
 import uuid
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage
-from schemas import Property  # Import the Property model here
+from src.models.schemas import Property
 
 class Example(TypedDict):
     """A representation of an example consisting of text input and expected tool calls."""

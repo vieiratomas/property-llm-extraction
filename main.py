@@ -1,9 +1,9 @@
 import json
-from api_client import create_llm_client
-from schemas import Property
-from prompt_templates import prompt
-from examples import tool_example_to_messages
-from examples_data import examples
+from src.api.client import create_llm_client
+from src.models.schemas import Property
+from src.templates.prompt_templates import prompt
+from src.prompt_examples.examples import tool_example_to_messages
+from src.prompt_examples.examples_data import examples
 
 def run_extraction(transcript_string, messages):
     llm = create_llm_client()
@@ -32,8 +32,8 @@ def save_to_file(data, file_path):
 
 if __name__ == "__main__":
 
-    transcript_path = "transcripts/transcript_1.txt"
-    file_path = "output/property_schema_1.json"
+    transcript_path = "data/transcripts/transcript_2.txt"
+    file_path = "data/output/property_schema_2.json"
 
     with open(transcript_path, 'r') as file:
         transcript_string = file.read()

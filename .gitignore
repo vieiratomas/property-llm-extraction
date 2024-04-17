@@ -1,8 +1,8 @@
 # Ignore output folder
-output/
+data/output/
 
 # Ignore .env with credentials
 .env
 
 # Ignore pycache
-__pycache__/
+*__pycache__/

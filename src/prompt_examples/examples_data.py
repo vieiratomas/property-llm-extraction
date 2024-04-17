@@ -1,4 +1,4 @@
-from schemas import Property
+from src.models.schemas import Property
 
 examples = [
     (
